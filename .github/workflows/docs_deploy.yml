@@ -32,7 +32,7 @@ jobs:
 
     - name: Build documentation
       run: |
-        sphinx-build -b html docs/source _build/html
+        uv run sphinx-build -b html docs/source _build/html
         echo "Documentation built successfully"
 
     - name: Upload Pages Artifact
